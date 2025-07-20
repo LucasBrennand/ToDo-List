@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefas Infinity</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="tarefas-container">
+            <div class="tarefas-header">
+                <img src="https://media.licdn.com/dms/image/v2/D4D0BAQFNR93j4fKXJA/company-logo_200_200/company-logo_200_200/0/1696797819036/infinityschool_logo?e=2147483647&v=beta&t=X855ID8EbNdKw7eqwLFiIYDU4u0ebPDieJK_MX41fxU"
+                    alt="infinity logo">
+                <h2>Tarefas</h2>
+                <h4>Olá, <span id="username">null</span></h4>
+            </div>
+
+            <div class="tarefas-body">
+                <form action="">
+                    <label for="tarefas-input">Digite uma tarefa</label>
+                    <input type="text" name="tarefas-input" id="tarefas-input" required>
+                    <input type="submit" value="Adicionar" class="tarefas-btn adicionar" id="tarefas-btn">
+                    <button class="tarefas-btn remover" id="tarefas-btn-limpar">Limpar</button>
+                </form>
+
+                <div class="tarefas-list-container">
+                    <ul class="tarefas-list" id="tarefas-list">
+                        <!-- <div class="tarefas-item">
+                            <li class="tarefas-li">Compras</li>
+                            <button>Remover</button>
+                        </div> -->
+                    </ul>
+                </div>
+            </div>
+
+            <div class="tarefas-contador-container">
+                <p>Total de Tarefas: <span id="tarefa-contador">0</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
